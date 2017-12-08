@@ -1,0 +1,70 @@
+<div class="card">
+  <div class="card-header">
+    <h2 class="card-title">
+      Customer Vehicles
+    </h2>
+    <small class="card-subtitle"></small>
+    <div class="dataTables_buttons actions">
+      <button class="btn btn-success waves-effect" nm="newVehicle">
+        <i class="zmdi zmdi-account-add"></i>
+        Add Vehicle
+      </button>
+    </div>
+  </div>
+  <div class="card-block">
+    <div class="table-responsive">
+      <table data-container="" id="data-table" class="table table-bordered">
+        <thead class="thead-default">
+          <tr data-table-header="">
+            <th style="width:12%">
+              Vehicle Id
+            </th>
+            <th style="width:12%">
+              Status
+            </th>
+            <th style="width:15%">
+              License
+            </th>
+            <th style="width:12%">
+              CF Number
+            </th>
+            <th style="width:16%">
+              Location
+            </th>
+            <th style="width:25%">
+              Model
+            </th>
+            <th style="width:20%; text-align:center">
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-table-row="">
+            <td data-child-type="readonly" data-field-type="readonly" nm="vehicleId">
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly" enum-name="vehicle-status" nm="status">
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly" nm="license">
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly" nm="cfNumber">
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly" nm="location">
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly" nm="model">
+            </td>
+            <td data-child-type="button" data-display-name="Button" style="text-align:center">
+              <span>
+              <button class="btn btn-sm btn-secondary waves-effect" nm="vehicleEdit" action-type="viewAbsoluteNav"
+              action-target="vehicle;id={{id}}" title="Edit vehicle details">
+                <i class="zmdi zmdi-edit"></i> Edit
+              </button>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

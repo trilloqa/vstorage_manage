@@ -1,0 +1,32 @@
+{
+  "action-type" : [
+    {
+      "v" : "1",
+      "n" : "Checkout"
+    },
+    {
+      "v" : "2",
+      "n" : "Checkin"
+    },
+    {
+      "v" : "3",
+      "n" : "Relocate"
+    },
+    {
+      "v" : "4",
+      "n" : "Pre-Checkout"
+    },
+    {
+      "v" : "5",
+      "n" : "Locate"
+    },
+    {
+      "v" : "6",
+      "n" : "Resume"
+    },
+    {
+      "v" : "7",
+      "n" : "Long term out"
+    }
+  ]
+}

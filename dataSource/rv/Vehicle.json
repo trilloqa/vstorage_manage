@@ -1,0 +1,162 @@
+{
+  "name" : "Vehicle",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "BigInteger",
+      "primaryKey" : true
+    },
+    {
+      "name" : "parentId",
+      "type" : "String",
+      "indexed" : true,
+      "length" : 36
+    },
+    {
+      "name" : "createdAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "tenantId",
+      "length" : 20,
+      "type" : "String",
+      "indexed" : true,
+      "tenant" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "Boolean"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "vehicleId",
+      "name2" : "boatProfileID",
+      "type" : "String",
+      "length" : 36,
+      "autoSequence" : true
+    },
+    {
+      "name" : "location",
+      "type" : "String"
+    },
+    {
+      "name" : "parentIdSource",
+      "name2" : "parentId",
+      "type" : "Long"
+    },
+    {
+      "name" : "vehicleType",
+      "name2" : "boatTypeID",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : 0
+    },
+    {
+      "name" : "status",
+      "name2" : "boatStatusID",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : "6"
+    },
+    {
+      "name" : "model",
+      "type" : "String"
+    },
+    {
+      "name" : "license",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "cfNumber",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "width",
+      "type" : "String",
+      "length" : 32
+    },
+     {
+      "name" : "length",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "checkedOutAt",
+      "type" : "BigInteger",
+      "defaultValue" : 0
+    },
+    {
+      "name" : "notes",
+      "type" : "String",
+      "length" : 4096,
+      "listHidden" : true
+    },
+    {
+      "name" : "buildingNumber",
+      "type" : "String"
+    },
+    {
+      "name" : "lastLocation",
+      "type" : "String"
+    },
+    {
+      "name" : "scheduleAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "scheduledBy",
+      "type" : "String"
+    },
+    {
+      "name" : "customerFirstName",
+      "type" : "String"
+    },
+    {
+      "name" : "customerLastName",
+      "type" : "String"
+    },
+    {
+      "name" : "customerPhone",
+      "type" : "String",
+      "length" : 16
+    },
+    {
+      "name" : "longTerm",
+      "type" : "Boolean",
+      "defaultValue" : false
+    },
+    {
+      "name" : "pendingTasks",
+      "type" : "Integer",
+      "defaultValue" : 0
+    }
+  ],
+  "associations" : [
+    {
+      "name" : "parent",
+      "type" : "MANY_TO_ONE",
+      "class2Name" : "Customer",
+      "attrMapping" : {
+        "myAttr" : "parentId",
+        "class2Attr" : "id"
+      },
+      "importAttrMapping" : {
+        "myAttr" : "parentIdSource",
+        "class2Attr" : "customerId"
+      }
+    }
+  ],
+  "displayName" : "Vehicle",
+  "nameInDS" : "vehicle_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

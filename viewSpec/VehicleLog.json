@@ -1,0 +1,27 @@
+{
+  "name" : "VehicleLog",
+  "type" : "dataTable",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/manage/rv",
+    "body" : {
+      "className" : "VehicleLog",
+      "start" : 1,
+      "size" : 10000,
+      "orderBy" : "createdAt desc",
+      "where" : "vehicleId={{{params.id}}}"
+    },
+    "method" : "post"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "createdAt"
+    },
+    {
+      "name" : "action"
+    },
+    {
+      "name" : "userId"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name" : "CheckinVehicleList",
+  "type" : "dataTable",
+  "controller" : "manage.OpVehicleListC",
+  "bodyClass" : "large-table",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/manage/rv",
+    "body" : {
+      "className" : "Vehicle",
+      "start" : 1,
+      "size" : 10000,
+      "orderBy" : "updatedAt desc"
+    },
+    "method" : "post"
+  },
+  "actionSpecs" : [
+    {
+      "name" : "vehicleEdit",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "preCheckout",
+      "type" : "dialogView",
+      "viewName" : "PreCheckoutForm2"
+    },
+    {
+      "name" : "relocate",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "checkout",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "checkin",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "photo",
+      "type" : "viewAbsoluteNav"
+    }
+  ],
+  "state" : {
+    "op" : "checkin",
+    "status" : "availableForCheckin"
+  }
+}

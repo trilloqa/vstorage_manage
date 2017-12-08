@@ -1,0 +1,49 @@
+{
+  "name" : "CustomerList",
+  "type" : "dataTable",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/manage/rv",
+    "body" : {
+      "className" : "Customer",
+      "start" : 1,
+      "size" : 10000,
+      "orderBy" : "lastName"
+    },
+    "method" : "post"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "firstName",
+      "displayName" : "First Name",
+      "type" : "readonly"
+    },
+    {
+      "name" : "lastName",
+      "displayName" : "Last Name",
+      "type" : "readonly"
+    },
+    {
+      "name" : "phone",
+      "displayName" : "(123) 234 234",
+      "type" : "readonly"
+    },
+    {
+      "name" : "active",
+      "type" : "checkbox"
+    }
+  ],
+  "actionSpecs" : [
+    {
+      "name" : "newCustomer",
+      "type" : "dialogView"
+    },
+    {
+      "name" : "_datatable_print"
+    },
+    {
+      "name" : "customerEdit",
+      "type" : "view"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name" : "rv",
+  "useDefault" : true,
+  "properties" : {
+    "url" : "jdbc:mysql://mysqlhost/rv?characterEncoding=UTF-8",
+    "username" : "rv",
+    "password" : "rv@pa$$"
+  },
+  "type" : "mysql",
+  "uid" : "DataSourceM.rv"
+}

@@ -1,0 +1,21 @@
+{
+  "name" : "NewTask",
+  "type" : "form",
+  "postUrl" : "/ds/save/manage/rv/Task",
+  "controller" : "manage.TaskC",
+  "data" : {
+    "priority" : "2",
+    "status" : "0"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "dueDate",
+      "options" : {
+        "minDate" : "today",
+        "dateFormat": "M d, Y h:i K",
+        "allowInput" : true,
+        "defaultHour" : 9
+      }
+    }
+  ]
+}

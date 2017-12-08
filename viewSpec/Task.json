@@ -1,0 +1,20 @@
+{
+  "name" : "Task",
+  "type" : "form",
+  "postUrl" : "/ds/save/manage/rv/Task",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/manage/rv/Task?id={{{params.id}}}"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "dueDate",
+      "options" : {
+        "minDate" : "today",
+        "dateFormat": "M d, Y h:i K",
+        "allowInput" : true,
+        "defaultHour" : 9
+      }
+    }
+  ]
+}

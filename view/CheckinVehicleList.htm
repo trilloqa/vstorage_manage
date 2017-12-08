@@ -1,0 +1,121 @@
+<div class="card">
+  <div class="card-header" style="padding-bottom:0px">
+    <h2 class="card-title">
+      Check In Vehicles
+    </h2>
+    <small class="card-subtitle"></small>
+    <div class="dataTables_buttons actions">
+      <button class="btn btn-success waves-effect" nm="_refresh">
+        <i class="zmdi zmdi-refresh"></i>
+        Refresh
+      </button>
+    </div>
+    <div style="margin-top: 30px" nm="OpVehicleListFilter">
+      <div data-radios-container="" data-type="string" nm="status">
+        <label class="custom-control custom-radio op-checkin">
+        <input type="radio" name="statusFilter" nm="status" value="availableForCheckin" class="custom-control-input" checked> 
+        <span class="custom-control-indicator"></span>
+         
+        <span class="custom-control-description">Available for check-in</span>
+        </label>
+         
+        <label class="custom-control custom-radio">
+        <input type="radio" name="statusFilter" nm="status" value="all" class="custom-control-input"> 
+        <span class="custom-control-indicator"></span>
+         
+        <span class="custom-control-description">All</span>
+        </label>
+        
+        <label style="margin-left:20px">Building:</label>
+        <select data-input="" class="form-control" 
+          style="margin-left: 15px; display:inline-block; width: 100px"
+          nm="buildingNumber"  enum-name="building-filter-type"></select>
+      </div>
+    </div>
+    <div class="card-block">
+      <div class="table-responsive">
+        <table data-container="" id="data-table" class="table table-bordered">
+          <thead class="thead-default">
+            <tr data-table-header="">
+              <th style="width:6%"  class="hide-700">
+                Id
+              </th>
+              <th style="width:10%" class="hide-1300">
+                Status
+              </th>
+              <th style="width:10%" class="hide-1200">
+                First Name
+              </th>
+              <th style="width:10%" class="hide-1100">
+                Last Name
+              </th>
+              <th style="width:10%" class="hide-800">
+                Model
+              </th>
+              <th style="width:6%">
+                License
+              </th>
+              <th style="width:6%" class="hide-1000">
+                CF#
+              </th>
+              <th style="width:12%" class="hide-900">
+                Checked Out At
+              </th>
+              <th style="width:8%">
+                Last Location
+              </th>
+              <th style="width:10%;"">
+                Location
+              </th>
+              <th style="width:10%; text-align:center">
+                Actions
+              </th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-table-row="">
+              <td data-child-type="readonly" data-field-type="readonly" nm="vehicleId"  class="hide-700">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" class="hide-1300">
+                <span enum-name="vehicle-status" nm="status"></span>
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="customerFirstName" class="hide-1200">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="customerLastName"  class="hide-1100">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="model" class="hide-800">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="license">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="cfNumber" class="hide-1000">
+              </td>
+               <td data-child-type="readonly" data-field-type="readonly" class="hide-900">
+                <span nm="checkedOutAt" field-type="datetime" format="MM/DD/YY"></span>
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="lastLocation">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly">
+                <input type="text" id="location" name="location" nm="location" style="max-width:80px" value="">
+              </td>
+              <td data-child-type="button" data-display-name="Button" style="text-align:center">
+                <span class="table-buttons"></span>
+                <button tabindex="-1" class="btn btn-sm btn-secondary waves-effect" nm="vehicleEdit" action-type="viewAbsoluteNav"
+                action-target="vehicle;id={{id}}" title="Edit vehicle details">
+                  <i class="zmdi zmdi-edit"></i>
+                  Edit
+                </button>
+                <button tabindex="-1" class="btn btn-sm btn-secondary waves-effect" nm="photo" title="View Photos" action-type=
+                "viewAbsoluteNav" action-target="photo;id={{id}}">
+                  <i class="zmdi zmdi-collection-image"></i>
+                  Photos
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

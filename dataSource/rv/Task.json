@@ -1,0 +1,134 @@
+{
+  "name" : "Task",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "BigInteger",
+      "primaryKey" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "tenantId",
+      "type" : "String",
+      "length" : 20,
+      "indexed" : true,
+      "tenant" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "Boolean"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "subject",
+      "type" : "String"
+    },
+    {
+      "name" : "description",
+      "type" : "String",
+      "length" : 4096,
+      "listHidden" : true
+    },
+    {
+      "name" : "status",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : "0"
+    },
+    {
+      "name" : "priority",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : "2"
+    },
+    {
+      "name" : "assignedTo",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "createdBy",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "completedBy",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "assignedToUserName",
+      "type" : "String"
+    },
+    {
+      "name" : "createByUserName",
+      "type" : "String"
+    },
+    {
+      "name" : "completedByUserName",
+      "type" : "String"
+    },
+    {
+      "name" : "dueDate",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "startDate",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "completeDate",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "completed",
+      "type" : "boolean",
+      "defaultValue" : false
+    },
+    {
+      "name" : "referenceId",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "taskCode",
+      "type" : "String",
+      "length" : 4,
+      "defaultValue" : "0"
+    },
+    {
+      "name" : "subTasks",
+      "type" : "String",
+      "length" : 4096
+    },
+    {
+      "name" : "license",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "cfNumber",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "vehicleId",
+      "type" : "String",
+      "length" : 36
+    },
+    {
+      "name" : "buildingNumber",
+      "type" : "String"
+    }
+  ],
+  "displayName" : "Task",
+  "nameInDS" : "task_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

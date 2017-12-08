@@ -1,0 +1,20 @@
+{
+  "name" : "NewVehicle",
+  "type" : "form",
+  "data" : {
+    "status" : "6"
+  },
+  "controller" : "manage.VehicleC",
+  "postUrl" : "/_rv/saveVehicle",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/manage/rv/Vehicle?id={{{params.id}}}"
+  },
+  "actionSpecs" : [
+    {
+      "name" : "preCheckout",
+      "type" : "dialogView",
+      "viewName" : "PreCheckoutForm3"
+    }
+  ]
+}

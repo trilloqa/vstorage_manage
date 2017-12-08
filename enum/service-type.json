@@ -1,0 +1,32 @@
+{
+  "service-type" : [
+    {
+      "v" : "1",
+      "n" : "Wash"
+    },
+    {
+      "v" : "2",
+      "n" : "Tire Pressure Check"
+    },
+    {
+      "v" : "3",
+      "n" : "Dump"
+    },
+    {
+      "v" : "4",
+      "n" : "Charge Battery"
+    },
+    {
+      "v" : "5",
+      "n" : "Propane"
+    },
+    {
+      "v" : "6",
+      "n" : "Fresh Water"
+    },
+    {
+      "v" : "7",
+      "n" : "Other Service"
+    }
+  ]
+}

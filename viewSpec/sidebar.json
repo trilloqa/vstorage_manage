@@ -1,0 +1,68 @@
+{
+  "name" : "sidebar",
+  "type" : "nav",
+  "html" : "<aside class=\"sidebar\">\n  <div class=\"scroll-wrapper scrollbar-inner\" style=\"position: relative;\">\n    <div class=\"scrollbar-inner scroll-content\" style=\n    \"height: 953.5px; margin-bottom: 0px; margin-right: 0px; max-height: none;\">\n      <div class=\"user\">\n        <div class=\"user__info\">\n          <img class=\"user__img\" src=\"static/img/user.png\" alt=\"\">\n          <div>\n            <div class=\"user__name\">\n              {{{appContext.userFullName}}}\n            </div>\n            <!--  div class=\"user__email\"> malinda-h@gmail.com</div-->\n          </div>\n        </div>\n        <div class=\"dropdown-menu\">\n          <a class=\"dropdown-item\" href=\"\">\n            View Profile\n          </a>\n          <a class=\"dropdown-item\" href=\"\">\n            Settings\n          </a>\n          <a class=\"dropdown-item\" href=\"\">\n            Logout\n          </a>\n        </div>\n      </div>\n      <ul class=\"navigation\">\n        <li>\n          <a nm=\"home_\">\n            <i class=\"zmdi zmdi-home\"></i>\n            Home\n          </a>\n        </li>\n        <li>\n          <a nm=\"customerList\">\n            <i class=\"zmdi zmdi-accounts\"></i>\n            Customer\n          </a>\n        </li>\n        <li>\n          <a nm=\"vehicleList\">\n            <i class=\"zmdi zmdi-boat\"></i>\n            Vehicle\n          </a>\n        </li>\n        <li class=\"navigation__sub\">\n          <a nm=\"inventory\">\n            <i class=\"zmdi zmdi-balance\"></i>\n            Inventory\n          </a>\n          <ul>\n            <li>\n              <a href=\"\" nm=\"scanForm\">\n                Scan Form\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"recordedInventory\">\n                Recorded Inventory\n              </a>\n            </li>\n          </ul>\n        </li>\n        <li class=\"navigation__sub\">\n          <a nm=\"inventory\">\n            <i class=\"zmdi zmdi-collection-text\"></i>\n            Reports\n          </a>\n          <ul>\n            <li>\n              <a href=\"\" nm=\"activityReport\">\n                Activity Report\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"missingVehicleReport\">\n                Missing Vehicle\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"statusReport\">\n                Wrong Status\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"wrongLocationReport\">\n                Wrong Warehouse\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"duplicateIdReport\">\n                Duplicate Id\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"invalidLabelReport\">\n                Invalid Label\n              </a>\n            </li>\n          </ul>\n        </li>\n        <li>\n          <a nm=\"tasks\">\n            <i class=\"zmdi zmdi-view-list\"></i>\n            Tasks\n          </a>\n        </li>\n        <li class=\"navigation__sub trillo-role-admin\">\n          <a nm=\"um\">\n            <i class=\"zmdi zmdi-settings\"></i>\n            Admin\n          </a>\n          <ul>\n            <li>\n              <a href=\"\" nm=\"users\">\n                Users\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"editOrg\">\n                Business Settings\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"uploadCSVFiles\">\n                Upload CSV Files\n              </a>\n            </li>\n            <li>\n              <a href=\"\" nm=\"initDB\">\n                Initialize DB\n              </a>\n            </li>\n          </ul>\n        </li>\n      </ul>\n    </div>\n    <div class=\"scroll-element scroll-x\">\n      <div class=\"scroll-element_outer\">\n        <div class=\"scroll-element_size\">\n        </div>\n        <div class=\"scroll-element_track\">\n        </div>\n        <div class=\"scroll-bar\" style=\"width: 100px;\">\n        </div>\n      </div>\n    </div>\n    <div class=\"scroll-element scroll-y\">\n      <div class=\"scroll-element_outer\">\n        <div class=\"scroll-element_size\">\n        </div>\n        <div class=\"scroll-element_track\">\n        </div>\n        <div class=\"scroll-bar\" style=\"height: 99px; top: 71.0667px;\">\n        </div>\n      </div>\n    </div>\n  </div>\n</aside>\n\n",
+  "actionSpecs" : [
+    {
+      "name" : "customerList",
+      "type" : "view"
+    },
+    {
+      "name" : "activityReport",
+      "type" : "view"
+    },
+    {
+      "name" : "inventory",
+      "type" : "view"
+    },
+    {
+      "name" : "users",
+      "type" : "link",
+      "url" : "/vstorage/UM"
+    },
+    {
+      "name" : "tasks",
+      "type" : "view"
+    },
+    {
+      "name" : "editOrg",
+      "type" : "view"
+    },
+    {
+      "name" : "vehicleList",
+      "type" : "view"
+    },
+    {
+      "name" : "recordedInventory",
+      "type" : "view"
+    },
+    {
+      "name" : "initDB",
+      "type" : "view"
+    },
+    {
+      "name" : "missingVehicleReport",
+      "type" : "view"
+    },
+    {
+      "name" : "statusReport",
+      "type" : "view"
+    },
+    {
+      "name" : "wrongLocationReport",
+      "type" : "view"
+    },
+    {
+      "name" : "duplicateIdReport",
+      "type" : "view"
+    },
+    {
+      "name" : "invalidLabelReport",
+      "type" : "view"
+    },
+    {
+      "name" : "precheckout",
+      "type" : "viewAbsoluteNav"
+    }
+  ]
+}

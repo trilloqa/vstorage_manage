@@ -1,0 +1,24 @@
+{
+  "task-status-type" : [
+    {
+      "v" : "0",
+      "n" : "New"
+    },
+    {
+      "v" : "1",
+      "n" : "In Progress"
+    },
+    {
+      "v" : "2",
+      "n" : "Suspended"
+    },
+    {
+      "v" : "3",
+      "n" : "Cancelled"
+    },
+    {
+      "v" : "4",
+      "n" : "Completed"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+/dist/js/lib2.0.min.js
+/lib/js/jquery-validation/jquery.validate.min.js
+/lib/js/chartjs/Chart.min.js
+/lib/js/datatables.net/jquery.dataTables.min.js
+/lib/js/datatables.net-buttons/dataTables.buttons.min.js
+/lib/js/datatables.net-buttons/buttons.print.min.js
+/lib/js/datatables.net-buttons/buttons.html5.min.js
+/lib/js/jszip/jszip.min.js
+/lib/lightgallery/js/lightgallery.js
+/lib/lightgallery/js/lg-thumbnail.js
+/lib/lightgallery/js/lg-zoom.js
+/lib/js/jsbarcode/JsBarcode.all.js
+

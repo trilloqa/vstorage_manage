@@ -1,0 +1,93 @@
+<div class="trillo-form trillo-form-1">
+  <div data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          Quick Check In
+        </h2>
+        <small class="card-subtitle"></small>
+      </div>
+      <div class="card-block">
+        <div class="row" style="margin-top:15px">
+          <div class="col-sm-6">
+            <h6 style="margin-bottom: 10px">
+              Vehicle Id:
+            </h6>
+            <div class="form-group">
+              <input data-input="" type="text" class="form-control form-control-lg js-default-focus" placeholder=
+              "Vehicle Id" nm="scannedVehicleId">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row location-field trillo-display-none" style="margin-top: 15px;">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <h6 style="margin-bottom: 10px">
+                Location:
+              </h6>
+              <input data-input="" type="text" class="form-control form-control-lg js-default-focus" placeholder=
+              "Location" nm="scannedLocation">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row error-msg-container trillo-display-none" style="margin-bottom: 15px;">
+          <div class="col-sm-6">
+            <h5 class="op-error-msg" name="invalid-status-msg">
+              Vehicle is not checked-out. Can't check-in.
+            </h5>
+            <h5 class="op-error-msg" name="inactive-status-msg">
+              Vehicle is in-active. Contact office.
+            </h5>
+            <h5 class="op-error-msg" name="long-term-out-msg">
+              Vehicle is long term out. Contact office.
+            </h5>
+            <h5 class="op-error-msg" name="invalid-vehicle-id-msg">
+              Invalid vehicle id.
+            </h5>
+          </div>
+        </div>
+        <div class="row post-search-elements trillo-display-none">
+          <div class="col-sm-6">
+            <h6 class="trillo-template-hidden" data-prefix=" Vehicle Id:&#160;">
+              {{{vehicleId}}}
+            </h6>
+            <br>
+
+            <span class="trillo-template-hidden" data-prefix=" Customer:&#160;" data-suffix=
+            ",">{{{customerLastName}}}</span>
+            <span class="trillo-template-hidden">{{{customerFirstName}}}</span>
+            <br>
+            <br>
+            <span class="trillo-template-hidden" data-prefix="License:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{license}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" CF #:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{cfNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Model:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{model}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Type:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;" enum-name="vehicle-type">{{{vehicleType}}}</span>
+            <br>
+            <span class="trillo-template-hidden" data-prefix=" Current Building:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;" enum-name="building-type">{{{buildingNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Current Location:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{location}}}</span>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <button class="btn btn-secondary waves-effect" nm="_browser_back">
+                <i class="zmdi zmdi-arrow-left"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>

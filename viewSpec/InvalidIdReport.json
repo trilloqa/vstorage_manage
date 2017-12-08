@@ -1,0 +1,53 @@
+{
+  "name" : "InvalidIdReport",
+  "type" : "dataTable",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/manage/rv",
+    "body" : {
+      "className" : "InventoryRecord",
+      "start" : 1,
+      "size" : 10000,
+      "where" : "status = '101'",
+      "orderBy" : "updatedAt desc",
+      "groupBy" : "vehicleId"
+    },
+    "method" : "post"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "checkedOut",
+      "type" : "checkbox"
+    },
+    {
+      "name" : "license"
+    },
+    {
+      "name" : "cf"
+    },
+    {
+      "name" : "model"
+    }
+  ],
+  "actionSpecs" : [
+    {
+      "name" : "vehicleEdit",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "_datatable_print"
+    },
+    {
+      "name" : "preCheckout",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "relocate",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "checkout",
+      "type" : "view"
+    }
+  ]
+}

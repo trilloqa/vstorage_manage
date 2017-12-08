@@ -1,0 +1,123 @@
+{
+  "name" : "InventoryRecord",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "BigInteger",
+      "primaryKey" : true
+    },
+    {
+      "name" : "sourceVehicleId",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "parentId",
+      "type" : "String",
+      "indexed" : true,
+      "length" : 36
+    },
+    {
+      "name" : "createdAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "tenantId",
+      "length" : 20,
+      "type" : "String",
+      "indexed" : true,
+      "tenant" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "Boolean"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "vehicleId",
+      "type" : "String",
+      "length" : 36
+    },
+    {
+      "name" : "location",
+      "type" : "String"
+    },
+    {
+      "name" : "vehicleType",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : 0
+    },
+    {
+      "name" : "status",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : "6"
+    },
+    {
+      "name" : "model",
+      "type" : "String"
+    },
+    {
+      "name" : "license",
+      "type" : "String",
+      "length" : 32,
+      "indexed" : true
+    },
+    {
+      "name" : "cfNumber",
+      "type" : "String",
+      "length" : 32,
+      "indexed" : true
+    },
+    {
+      "name" : "width",
+      "type" : "String",
+      "length" : 32
+    },
+     {
+      "name" : "length",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "buildingNumber",
+      "type" : "String"
+    },
+    {
+      "name" : "lastLocation",
+      "type" : "String"
+    },
+    {
+      "name" : "customerFirstName",
+      "type" : "String"
+    },
+    {
+      "name" : "customerLastName",
+      "type" : "String"
+    },
+    {
+      "name" : "customerPhone",
+      "type" : "String",
+      "length" : 16
+    },
+    {
+      "name" : "scanBuildingNumber",
+      "type" : "String"
+    },
+    {
+      "name" : "scannedAt",
+      "type" : "BigInteger"
+    }
+  ],
+  "displayName" : "InventoryRecord",
+  "nameInDS" : "inventoryrecord_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

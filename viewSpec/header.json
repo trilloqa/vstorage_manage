@@ -1,0 +1,21 @@
+{
+  "name" : "header",
+  "type" : "html",
+  "actionSpecs" : [
+    {
+      "name" : "changeMyPassword"
+    },
+    {
+      "name" : "_logout"
+    },
+    {
+      "name" : "myProfile"
+    },
+    {
+      "name" : "toggleSideBarr"
+    },
+    {
+      "name" : "toggleSideBar"
+    }
+  ]
+}

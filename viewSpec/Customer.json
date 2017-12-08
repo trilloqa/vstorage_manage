@@ -1,0 +1,33 @@
+{
+  "name" : "Customer",
+  "type" : "form",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/manage/rv/Customer?id={{{params.id}}}"
+  },
+  "postUrl" : "/_rv/saveCustomer",
+  "fieldSpecs" : [
+    {
+      "name" : "Text_1",
+      "displayName" : "Text_1",
+      "editable" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "Text_2",
+      "displayName" : "Text_2",
+      "editable" : true,
+      "type" : "text"
+    }
+  ],
+  "actionSpecs" : [
+    {
+      "name" : "Save",
+      "type" : "script"
+    },
+    {
+      "name" : "cancel",
+      "type" : "script"
+    }
+  ]
+}

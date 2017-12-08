@@ -1,0 +1,28 @@
+{
+  "name" : "BarcodeGrid",
+  "type" : "table",
+  "fieldSpecs" : [
+    {
+      "name" : "c0",
+      "type" : "readonly"
+    },
+    {
+      "name" : "c1",
+      "displayName" : "1",
+      "editable" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "c2",
+      "displayName" : "2",
+      "editable" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "c3",
+      "displayName" : "3",
+      "editable" : true,
+      "type" : "text"
+    }
+  ]
+}

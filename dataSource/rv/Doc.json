@@ -1,0 +1,164 @@
+{
+  "name" : "Doc",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "BigInteger",
+      "nameInDS" : "id",
+      "primaryKey" : true,
+      "typeInDS" : "BIGINT",
+      "uid" : "AttributeM.id"
+    },
+    {
+      "name" : "orgId",
+      "type" : "BigInteger",
+      "nameInDS" : "orgId",
+      "primaryKey" : false,
+      "typeInDS" : "BIGINT",
+      "uid" : "AttributeM.orgId"
+    },
+    {
+      "name" : "appKey",
+      "type" : "String",
+      "nameInDS" : "appKey",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.appKey"
+    },
+    {
+      "name" : "createdAt",
+      "type" : "BigInteger",
+      "nameInDS" : "createdAt",
+      "primaryKey" : false,
+      "typeInDS" : "BIGINT",
+      "uid" : "AttributeM.createdAt"
+    },
+    {
+      "name" : "name",
+      "type" : "String",
+      "nameInDS" : "name",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.name"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "BigInteger",
+      "nameInDS" : "updatedAt",
+      "primaryKey" : false,
+      "typeInDS" : "BIGINT",
+      "uid" : "AttributeM.updatedAt"
+    },
+    {
+      "name" : "appName",
+      "type" : "String",
+      "nameInDS" : "appName",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.appName"
+    },
+    {
+      "name" : "authors",
+      "type" : "String",
+      "nameInDS" : "authors",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.authors"
+    },
+    {
+      "name" : "comments",
+      "type" : "Integer",
+      "nameInDS" : "comments",
+      "primaryKey" : false,
+      "typeInDS" : "INT",
+      "uid" : "AttributeM.comments"
+    },
+    {
+      "name" : "deleted",
+      "type" : "Boolean",
+      "nameInDS" : "deleted",
+      "primaryKey" : false,
+      "typeInDS" : "BIT",
+      "uid" : "AttributeM.deleted"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "BigInteger",
+      "length" : 19,
+      "nameInDS" : "deletedAt",
+      "typeInDS" : "BIGINT",
+      "uid" : "AttributeM.deletedAt"
+    },
+    {
+      "name" : "description",
+      "type" : "String",
+      "nameInDS" : "description",
+      "primaryKey" : false,
+      "typeInDS" : "TEXT",
+      "uid" : "AttributeM.description"
+    },
+    {
+      "name" : "displayName",
+      "type" : "String",
+      "nameInDS" : "displayName",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.displayName"
+    },
+    {
+      "name" : "orgName",
+      "type" : "String",
+      "nameInDS" : "orgName",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.orgName"
+    },
+    {
+      "name" : "parentUid",
+      "type" : "String",
+      "nameInDS" : "parentUid",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.parentUid"
+    },
+    {
+      "name" : "published",
+      "type" : "Boolean",
+      "nameInDS" : "published",
+      "primaryKey" : false,
+      "typeInDS" : "BIT",
+      "uid" : "AttributeM.published"
+    },
+    {
+      "name" : "tags",
+      "type" : "String",
+      "nameInDS" : "tags",
+      "primaryKey" : false,
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.tags"
+    },
+    {
+      "name" : "visibility",
+      "type" : "Integer",
+      "nameInDS" : "visibility",
+      "primaryKey" : false,
+      "typeInDS" : "INT",
+      "uid" : "AttributeM.visibility"
+    },
+    {
+      "name" : "tenantId",
+      "type" : "String",
+      "indexed" : true,
+      "length" : 20,
+      "nameInDS" : "tenantId",
+      "typeInDS" : "VARCHAR",
+      "uid" : "AttributeM.tenantId",
+      "tenant" : true
+    }
+  ],
+  "displayName" : "Doc",
+  "nameInDS" : "doc_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true,
+  "uid" : "ClassM.doc_tbl"
+}

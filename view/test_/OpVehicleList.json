@@ -1,0 +1,194 @@
+[
+  {
+    "checkedOut" : false,
+    "license" : "license1",
+    "cf" : "cf1",
+    "model" : "model1"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license2",
+    "cf" : "cf2",
+    "model" : "model2"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license3",
+    "cf" : "cf3",
+    "model" : "model3"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license4",
+    "cf" : "cf4",
+    "model" : "model4"
+  },
+  {
+    "checkedOut" : true,
+    "license" : "license5",
+    "cf" : "cf5",
+    "model" : "model5"
+  },
+  {
+    "checkedOut" : true,
+    "license" : "license6",
+    "cf" : "cf6",
+    "model" : "model6"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license7",
+    "cf" : "cf7",
+    "model" : "model7"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license8",
+    "cf" : "cf8",
+    "model" : "model8"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license9",
+    "cf" : "cf9",
+    "model" : "model9"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license10",
+    "cf" : "cf10",
+    "model" : "model10"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license11",
+    "cf" : "cf11",
+    "model" : "model11"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license12",
+    "cf" : "cf12",
+    "model" : "model12"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license13",
+    "cf" : "cf13",
+    "model" : "model13"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license14",
+    "cf" : "cf14",
+    "model" : "model14"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license15",
+    "cf" : "cf15",
+    "model" : "model15"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license16",
+    "cf" : "cf16",
+    "model" : "model16"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license17",
+    "cf" : "cf17",
+    "model" : "model17"
+  },
+  {
+    "checkedOut" : true,
+    "license" : "license18",
+    "cf" : "cf18",
+    "model" : "model18"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license19",
+    "cf" : "cf19",
+    "model" : "model19"
+  },
+  {
+    "checkedOut" : true,
+    "license" : "license20",
+    "cf" : "cf20",
+    "model" : "model20"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license21",
+    "cf" : "cf21",
+    "model" : "model21"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license22",
+    "cf" : "cf22",
+    "model" : "model22"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license23",
+    "cf" : "cf23",
+    "model" : "model23"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license24",
+    "cf" : "cf24",
+    "model" : "model24"
+  },
+  {
+    "checkedOut" : true,
+    "license" : "license25",
+    "cf" : "cf25",
+    "model" : "model25"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license26",
+    "cf" : "cf26",
+    "model" : "model26"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license27",
+    "cf" : "cf27",
+    "model" : "model27"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license28",
+    "cf" : "cf28",
+    "model" : "model28"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license29",
+    "cf" : "cf29",
+    "model" : "model29"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license30",
+    "cf" : "cf30",
+    "model" : "model30"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license31",
+    "cf" : "cf31",
+    "model" : "model31"
+  },
+  {
+    "checkedOut" : true,
+    "license" : "license32",
+    "cf" : "cf32",
+    "model" : "model32"
+  }
+]

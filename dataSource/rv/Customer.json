@@ -1,0 +1,129 @@
+{
+  "name" : "Customer",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "BigInteger",
+      "primaryKey" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "tenantId",
+      "type" : "String",
+      "length" : 20,
+      "indexed" : true,
+      "tenant" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "Boolean"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "customerId",
+      "type" : "String",
+      "length" : 36
+    },
+    {
+      "name" : "active",
+      "type" : "short",
+      "defaultValue" : 1
+    },
+    {
+      "name" : "company",
+      "type" : "String"
+    },
+    {
+      "name" : "firstName",
+      "type" : "String"
+    },
+    {
+      "name" : "lastName",
+      "type" : "String"
+    },
+    {
+      "name" : "QBCustomerName",
+      "type" : "String"
+    },
+     {
+      "name" : "addressLine1",
+      "type" : "String"
+    },
+    {
+      "name" : "addressLine2",
+      "type" : "String"
+    },
+    {
+      "name" : "city",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "state",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "zip",
+      "type" : "String",
+      "length" : 16
+    },
+    {
+      "name" : "phone",
+      "type" : "String",
+      "length" : 16
+    },
+    {
+      "name" : "fax",
+      "type" : "String",
+      "length" : 16
+    },
+    {
+      "name" : "altPhone",
+      "type" : "String",
+      "length" : 16
+    },
+    {
+      "name" : "email",
+      "type" : "String"
+    },
+    {
+      "name" : "notes",
+      "type" : "String",
+      "length" : 4096,
+      "listHidden" : true
+    },
+    {
+      "name" : "tags",
+      "type" : "String"
+    },
+    {
+      "name" : "password",
+      "type" : "String",
+      "length" : 50,
+      "listHidden" : true
+    },
+    {
+      "name" : "licenses",
+      "type" : "String"
+    },
+    {
+      "name" : "cfNumbers",
+      "type" : "String"
+    }
+  ],
+  "displayName" : "Customer",
+  "nameInDS" : "customer_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

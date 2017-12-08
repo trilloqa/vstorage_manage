@@ -1,0 +1,7 @@
+{
+  "name" : "UploadCSVFiles",
+  "type" : "form",
+  "data" : {
+    "clsName" : "Customer"
+  }
+}

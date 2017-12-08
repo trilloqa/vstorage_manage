@@ -1,0 +1,92 @@
+{
+  "name" : "VehicleLog",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "BigInteger",
+      "primaryKey" : true
+    },
+    {
+      "name" : "sourceVehicleId",
+      "type" : "BigInteger"
+    },
+    {
+      "name" : "createdAt",
+      "type" : "BigInteger",
+      "nameInDS" : "createdAt"
+    },
+    {
+      "name" : "tenantId",
+      "type" : "long",
+      "tenant" : true
+    },
+    {
+      "name" : "userPk",
+      "type" : "long"
+    },
+    {
+      "name" : "userId",
+      "type" : "String",
+      "length" : 255
+    },
+    {
+      "name" : "userFullName",
+      "type" : "String",
+      "length" : 255
+    },
+    {
+      "name" : "action",
+      "type" : "String",
+      "length" : 4
+    },
+    {
+      "name" : "message",
+      "type" : "String"
+    },
+    {
+      "name" : "notes",
+      "type" : "String"
+    },
+    {
+      "name" : "tags",
+      "type" : "String",
+      "nameInDS" : "tags"
+    },
+    {
+      "name" : "vehicleId",
+      "name2" : "boatProfileID",
+      "type" : "String",
+      "length" : 36,
+      "autoSequence" : true
+    },
+    {
+      "name" : "vehicleType",
+      "name2" : "boatTypeID",
+      "type" : "string",
+      "length" : 4,
+      "defaultValue" : 0
+    },
+    {
+      "name" : "model",
+      "type" : "String"
+    },
+    {
+      "name" : "license",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "cfNumber",
+      "type" : "String",
+      "length" : 32
+    },
+    {
+      "name" : "buildingNumber",
+      "type" : "String"
+    }
+  ],
+  "displayName" : "VehicleLog",
+  "nameInDS" : "vehiclelog_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

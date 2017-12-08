@@ -1,0 +1,78 @@
+<div class="trillo-form trillo-form-1">
+  <form data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          New Task
+        </h2>
+        <small class="card-subtitle"></small>
+      </div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input="" type="text" class="form-control" placeholder="Subject" nm="subject" required="">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <textarea data-input="" class="form-control" placeholder="Description" nm="description">
+                                           
+                             
+              </textarea>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">Assigned To</label>
+              <select data-input="" class="form-control" nm="assignedTo">
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">Priority</label>
+              <select data-input="" class="form-control" placeholder="Priority" enum-name="task-priority-type" nm=
+              "priority">
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="status">Due Date</label>
+              <input type="text" data-input data-field-type="datetime" class="form-control flatpickr-input" 
+                placeholder="Click to pick a date" nm="dueDate" required readonly="readonly">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="okThenClose">
+                Save
+              </button>
+              <button class="btn btn-secondary waves-effect" nm="_browser_back">
+                <i class="zmdi zmdi-arrow-left"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>
+

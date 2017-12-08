@@ -1,0 +1,130 @@
+<div class="trillo-form trillo-form-1">
+  <form data-container="">
+    <div class="card">
+      <div class="card-header">
+          <h2 class="card-title">Customer</h2>
+          <small class="card-subtitle"></small>
+      </div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="First Name" nm="firstName" required>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="Last Name" nm="lastName" required>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Phone" nm="phone" required minlength="10">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Alternate Phone" nm="altPhone" minlength="10">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="email" class="form-control" placeholder="Email" nm="email">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="Fax" nm="fax" minlength="10">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="Company" nm="company">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="Address Line 1" nm="addressLine1">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="Address Line 2" nm="addressLine2">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="City" nm="city">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="State" nm="state">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <input data-input type="text" class="form-control" placeholder="Zip" nm="zip" data-mask="99999?-9999">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-4">
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input data-input type="checkbox" type="checkbox" class="custom-control-input" nm="active">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Active</span>
+              </label>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="ok">
+                Save
+              </button>
+              <button class="btn btn-primary waves-effect trillo-dsiplay-none" nm="newVehicle"
+                action-type="viewAbsoluteNav" action-target="newVehicle;parentId={{id}}">
+                Add Vehicle
+              </button>
+              <button class="btn btn-secondary waves-effect" nm="_browser_back">
+                <i class="zmdi zmdi-arrow-left"></i> Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>
+

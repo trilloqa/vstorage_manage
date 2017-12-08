@@ -1,0 +1,23 @@
+{
+  "name" : "RelocateForm2",
+  "type" : "form",
+  "postUrl" : "/_rv/relocate",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/manage/rv/Vehicle?id={{{parentSelectedObj.id}}}"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "Text_1",
+      "displayName" : "Text_1",
+      "editable" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "Text_2",
+      "displayName" : "Text_2",
+      "editable" : true,
+      "type" : "text"
+    }
+  ]
+}

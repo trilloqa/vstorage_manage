@@ -1,0 +1,9 @@
+{
+  "name" : "OrgForm",
+  "type" : "form",
+  "postUrl" : "/_service/um/tenantOrg",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/auth/vault/Org?id={{{appContext.user.tenantId}}}"
+  }
+}

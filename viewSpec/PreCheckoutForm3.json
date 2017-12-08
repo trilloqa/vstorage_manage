@@ -1,0 +1,29 @@
+{
+  "name" : "PreCheckoutForm3",
+  "type" : "form",
+  "controller" : "manage.OpC",
+  "postUrl" : "/_rv/preCheckout",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/_rv/precheckOut/vehicle/{{{parentParams.id}}}"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "scheduleDate",
+      "options" : {
+        "minDate" : "today",
+        "dateFormat" : "M d, Y",
+        "allowInput" : true
+      }
+    },
+    {
+      "name" : "scheduleTime",
+      "options" : {
+        "dateFormat" : "h:i K",
+        "defaultHour" : 9,
+        "allowInput" : true,
+        "minuteIncrement" : 15
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<header class="header">
+  <div class="navigation-trigger hidden-xl-up js-tool" data-ma-action="aside-open" data-ma-target=".left-column" nm=
+  "toggleSideBar">
+    <div class="navigation-trigger__inner">
+      <i class="navigation-trigger__line"></i>
+      <i class="navigation-trigger__line"></i>
+      <i class="navigation-trigger__line"></i>
+    </div>
+  </div>
+  <div class="header__logo hidden-sm-down">
+    <h1>
+      <a href="/vstorage/manage">
+        {{{appContext.user.tenantProps.name}}}
+      </a>
+    </h1>
+  </div>
+  <form class="search" style="visibility: hidden">
+    <div class="search__inner">
+      <input type="text" class="search__text" placeholder="Search for people, files, documents...">
+      <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+    </div>
+  </form>
+  <ul class="top-nav">
+    <li class="hidden-xl-up-fix-me trillo-display-none">
+      <a href="" data-ma-action="search-open">
+        <i class="zmdi zmdi-search"></i>
+      </a>
+    </li>
+    <li class="dropdown hidden-xs-down">
+      <a href="" data-toggle="dropdown">
+        <i class="zmdi zmdi-more-vert"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-item theme-switch">
+          Theme Switch 
+          <div class="btn-group btn-group--colors mt-2" data-toggle="buttons">
+            <label class="btn bg-green waves-effect">
+            <input type="radio" value="green" autocomplete="off"></label>
+             
+            <label class="btn bg-blue waves-effect">
+            <input type="radio" value="blue" autocomplete="off"></label>
+             
+            <label class="btn bg-red waves-effect">
+            <input type="radio" value="red" autocomplete="off"></label>
+             
+            <label class="btn bg-orange waves-effect">
+            <input type="radio" value="orange" autocomplete="off"></label>
+             
+            <label class="btn bg-teal waves-effect">
+            <input type="radio" value="teal" autocomplete="off"></label>
+            <br>
+             
+            <label class="btn bg-cyan waves-effect">
+            <input type="radio" value="cyan" autocomplete="off"></label>
+             
+            <label class="btn bg-blue-grey waves-effect">
+            <input type="radio" value="blue-grey" autocomplete="off"></label>
+             
+            <label class="btn bg-purple waves-effect">
+            <input type="radio" value="purple" autocomplete="off"></label>
+             
+            <label class="btn bg-indigo waves-effect">
+            <input type="radio" value="indigo" autocomplete="off"></label>
+             
+            <label class="btn bg-lime waves-effect">
+            <input type="radio" value="lime" autocomplete="off"></label>
+          </div>
+        </div>
+        <a href="" nm="myProfile" class="dropdown-item js-menu-item">
+          My Profile
+        </a>
+        <a href="" nm="changeMyPassword" class="dropdown-item js-menu-item">
+          Change Password
+        </a>
+        <a href="/_logout" nm="_logout" class="dropdown-item js-menu-item">
+          Logout
+        </a>
+      </div>
+    </li>
+  </ul>
+</header>
+

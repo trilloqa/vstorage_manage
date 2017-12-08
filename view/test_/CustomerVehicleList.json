@@ -1,0 +1,16 @@
+[
+  {
+    "checkedOut" : true,
+    "license" : "license1",
+    "cf" : "cf1",
+    "model" : "model1",
+    "id" : "1234"
+  },
+  {
+    "checkedOut" : false,
+    "license" : "license2",
+    "cf" : "cf2",
+    "model" : "model2",
+    "id" : "2345"
+  }
+]

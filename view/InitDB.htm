@@ -1,0 +1,61 @@
+<div class="trillo-form trillo-form-1">
+  <form data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          Initialize DB
+          <span class="building-name-title trillo-display-none">for 
+          <span class="building-name"></span>
+          </span>
+        </h2>
+        <small class="card-subtitle"></small>
+      </div>
+      <div class="card-block">
+        <div class="row row-1">
+          <div class="col-sm-6 alert alert-danger" style="font-size:1.2rem;">
+            <strong>Danger!</strong> it will delete customer and vehicle records from the database and import them from
+            'csv' files.
+          </div>
+        </div>
+        <div class="row row-2" style="margin-top: 15px;">
+          <div class="col-sm-6">
+            <label class="custom-control custom-checkbox">
+              <span class="custom-control-description">Initialize DB</span>
+              <input type="checkbox" class="custom-control-input" nm="confirm" name="confirm" id="confirm" required
+                data-msg-required="Please check this to confirm then click on <strong>Initialize DB</strong>.">
+              <span class="custom-control-indicator"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row row-3 trillo-display-none">
+          <div class="col-sm-6 alert alert-warning" style="font-size:1.2rem;">
+            <strong>Wait!</strong> initializing DB, it will take few minutes.
+          </div>
+        </div>
+        <div class="row row-4 trillo-display-none">
+          <div class="col-sm-6 alert alert-success" style="font-size:1.2rem;">
+            <strong>Done!</strong> initializing DB completed.
+          </div>
+        </div>
+        <div class="row row-5 trillo-display-none">
+          <div class="col-sm-6 alert alert-danger" style="font-size:1.2rem;">
+            <strong>Failed!</strong> <span class="failed-msg"></span>.
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="initDB">
+                Initialize DB
+              </button>
+              <button class="btn btn-secondary waves-effect" nm="_browser_back">
+                <i class="zmdi zmdi-arrow-left"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

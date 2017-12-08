@@ -1,0 +1,120 @@
+<div class="trillo-form trillo-form-1" width="480px">
+  <form data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          Pre Checkout
+        </h2>
+        <small class="card-subtitle"><span class="trillo-template-hidden">{{{customerLastName}}}, {{{customerFirstName}}}</span></small>
+      </div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-sm-12">
+            <span class="trillo-template-hidden" data-prefix="License: " data-suffix="&#160;&#160;&#160;&#160;&#160; ">{{{license}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" CF #: " data-suffix="&#160;&#160;&#160;&#160;&#160; ">{{{cfNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Model: " data-suffix="&#160;&#160;&#160;&#160;&#160; ">{{{model}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Type: " data-suffix="&#160;&#160;&#160;&#160;&#160; " enum-name=
+            "vehicle-type">{{{vehicleType}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Location: " data-suffix="&#160;&#160;&#160;&#160;&#160; ">{{{location}}}</span>
+            
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input type="text" data-input data-field-type="date" class="form-control flatpickr-input" 
+                placeholder="Click to pick a date" nm="scheduleDate" required readonly="readonly">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="form-group">
+              <input type="text" data-input data-field-type="time" class="form-control flatpickr-input" 
+                placeholder="Click to pick a time" nm="scheduleTime" required readonly="readonly">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="longTerm">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Long Term?</span>
+            </label>
+          </div>
+        </div>
+        <div class="row" style="margin-top:15px">
+          <div class="col-sm-12">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="washService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Wash</span>
+            </label>
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="tirePressueCheckService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Tire Pressure Check</span>
+            </label>
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="dumpService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Dump</span>
+            </label>         
+          </div>
+        </div>
+        <div class="row" style="margin-top:15px">
+          <div class="col-sm-12">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="chargeBatteryService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Charge Battery</span>
+            </label>
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="propaneService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Propane</span>
+            </label>
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="freshWaterService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Fresh Water</span>
+            </label>
+          </div>
+        </div>
+        <div class="row" style="margin-top:15px">
+          <div class="col-sm-12">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" nm="otherService">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Other Service</span>
+            </label>
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px"">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <textarea data-input="" class="form-control" placeholder="Add a note here..." nm="notes"></textarea>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="okThenClose">
+                Pre Checkout
+              </button>
+              <button class="btn btn-secondary waves-effect" nm="close">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>
+

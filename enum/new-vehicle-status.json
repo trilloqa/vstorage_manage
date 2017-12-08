@@ -1,0 +1,16 @@
+{
+  "new-vehicle-status" : [
+    {
+      "v" : "0",
+      "n" : "Unknown"
+    },
+    {
+      "v" : "1",
+      "n" : "In Warehouse"
+    },
+    {
+      "v" : "6",
+      "n" : "New Vehicle"
+    }
+  ]
+}

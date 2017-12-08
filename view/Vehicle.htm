@@ -1,0 +1,201 @@
+<div class="trillo-form trillo-form-1">
+  <form data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          Vehicle <span class="trillo-template-hidden">{{{vehicleId}}}</span>
+        </h2>
+        <small class="card-subtitle"></small>
+         <div class="row">
+          <div class="col-sm-6" style="text-align:right">
+              <button class="btn btn-info waves-effect hide-in-barcode-mode pre-checkout-action-row trillo-display-none" nm="preCheckout">
+                <i class="zmdi zmdi-time"></i> Pre-Checkout
+              </button>
+              <button class="btn btn-info waves-effect hide-in-barcode-mode js-tool" nm="showBarcodeForm">
+                <i class="zmdi zmdi-ruler"></i> Barcode
+              </button>
+              <button class="btn btn-success waves-effect js-barcode-mode js-tool trillo-display-none" nm="printBarcodeForm">
+                <i class="zmdi zmdi-print"></i>
+                Print Barcode
+              </button>
+              <button class="btn btn-secondary waves-effect js-barcode-mode js-tool trillo-display-none" nm="closeBarcodeForm">
+                <i class="zmdi zmdi-arrow-left"></i> Close
+              </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-block card-outline-primary barcode-card-block col-sm-6 js-barcode-mode trillo-display-none">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="priority">Row:</label>
+              <select data-input="" class="form-control" enum-name="barcode-row-type" nm="barcodeRow">
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="priority">Column:</label>
+              <select data-input="" class="form-control" enum-name="barcode-col-type" nm="barcodeCol">
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="priority">License:</label>
+              <input data-input="" type="text" class="form-control" nm="license" readonly>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="priority">CF Number:</label>
+              <input data-input="" type="text" class="form-control" nm="cfNumber" readonly>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input data-input type="checkbox" type="checkbox" class="custom-control-input" nm="printLicense">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Include License?</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input data-input type="checkbox" type="checkbox" class="custom-control-input" nm="printCF">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Include CF?</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="barcode-div">
+          <div class="barcode-inner-div">
+            <svg class="barcode-label"></svg>
+          </div>
+        </div>
+      </div>
+     
+      <div class="card-block hide-in-barcode-mode">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="priority">Type:</label>
+              <select data-input="" class="form-control" placeholder="Type of Vehicle" enum-name="vehicle-type" nm="vehicleType">
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label for="priority">Status:</label>
+              <select data-input="" class="form-control" placeholder="Status of Vehicle" enum-name="vehicle-status" nm="status" disabled>
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row schedule-at-row trillo-display-none">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="status">Scheduled At</label>
+              <input class="form-control" nm="scheduleAt" field-type="datetime" disabled>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">License:</label>
+              <input data-input="" type="text" class="form-control" nm="license">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">CF Number:</label>
+              <input data-input="" type="text" class="form-control" nm="cfNumber">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">Building:</label>
+              <select data-input="" class="form-control" nm="buildingNumber"  enum-name="building-type"></select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">Location:</label>
+              <input data-input="" type="text" class="form-control" nm="location"d>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="priority">Model:</label>
+              <input data-input="" type="text" class="form-control"  nm="model">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">Width:</label>
+              <input data-input="" type="text" class="form-control" nm="width">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="priority">Length:</label>
+              <input data-input="" type="text" class="form-control" nm="length">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px"">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <textarea data-input="" class="form-control" placeholder="Add a note here..." nm="notes"></textarea>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="ok">
+                Save
+              </button>
+              <button class="btn btn-secondary waves-effect" nm="_browser_back">
+                <i class="zmdi zmdi-arrow-left"></i> Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>
+

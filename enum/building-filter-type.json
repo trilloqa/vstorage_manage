@@ -1,0 +1,16 @@
+{
+  "building-filter-type" : [
+    {
+      "v" : "",
+      "n" : "All"
+    },
+    {
+      "v" : "1",
+      "n" : "Richard Blvd"
+    },
+    {
+      "v" : "2",
+      "n" : "North B St"
+    }
+  ]
+}

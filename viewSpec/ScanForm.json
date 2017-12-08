@@ -1,0 +1,21 @@
+{
+  "name" : "ScanForm",
+  "type" : "form",
+  "data" : {
+    "scanBuildingNumber" : "1"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "Text_1",
+      "displayName" : "Text_1",
+      "editable" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "Text_2",
+      "displayName" : "Text_2",
+      "editable" : true,
+      "type" : "text"
+    }
+  ]
+}

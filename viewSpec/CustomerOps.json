@@ -1,0 +1,22 @@
+{
+  "name" : "CustomerOps",
+  "type" : "html",
+  "actionSpecs" : [
+    {
+      "name" : "newCustomer",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "precheckout",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "resumeStorage",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "newTask",
+      "type" : "viewAbsoluteNav"
+    }
+  ]
+}

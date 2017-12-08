@@ -1,0 +1,16 @@
+{
+  "building-type" : [
+    {
+      "v" : "0",
+      "n" : "NA"
+    },
+    {
+      "v" : "1",
+      "n" : "Richard Blvd"
+    },
+    {
+      "v" : "2",
+      "n" : "North B St"
+    }
+  ]
+}

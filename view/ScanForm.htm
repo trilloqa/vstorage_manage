@@ -1,0 +1,79 @@
+<div class="trillo-form trillo-form-1">
+  <div data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          Record Inventory <span class="building-name-title trillo-display-none"> for <span class="building-name"></span></span>
+        </h2>
+        <small class="card-subtitle"></small>
+      </div>
+      <div class="card-block">
+        <div class="row building-row" style="margin-top: 15px;">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <h6 style="margin-bottom: 5px">
+                Select Building or Lot:
+              </h6>
+              <select data-input="" class="form-control form-control-lg" placeholder="Building" nm="scanBuildingNumber"
+              enum-name="building-type">
+              </select>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row vehicle-row trillo-display-none" style="margin-top:15px;">
+          <div class="col-sm-6">
+            <h6 style="margin-bottom: 10px">
+              Scan Barcode or Enter Vehicle ID:
+            </h6>
+            <div class="form-group">
+              <input data-input="" type="text" class="form-control form-control-lg js-default-focus" placeholder=
+              "Click here before scanning ..." nm="scannedVehicleId">
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row scan-form-vehicle-detail trillo-display-none">
+          <div class="col-sm-6">
+            <h6 class="trillo-template-hidden" data-prefix=" Vehicle Id:&#160;">{{{vehicleId}}}</h6>
+            <br/>
+            <span class="trillo-template-hidden" data-prefix=" Customer:&#160;" data-suffix=",">{{{customerLastName}}}</span>
+            <span class="trillo-template-hidden">{{{customerFirstName}}}</span>
+            <br>
+            <br>
+            <span class="trillo-template-hidden" data-prefix="License:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{license}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" CF #:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{cfNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Model:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{model}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Type:&#160;" data-suffix="&#160;&#160;&#160;&#160;&#160;"
+            enum-name="vehicle-type">{{{vehicleType}}}</span>
+            <br>
+            <span class="trillo-template-hidden" data-prefix=" Current Building:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;" enum-name="building-type">{{{buildingNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Current Location:&#160;" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{location}}}</span>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="continue">
+              Continue
+            </button>
+              <button class="btn btn-secondary waves-effect" nm="_browser_back">
+                <i class="zmdi zmdi-arrow-left"></i>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>
+

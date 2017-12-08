@@ -1,0 +1,72 @@
+{
+  "vehicle-type" : [
+    {
+      "v" : "",
+      "n" : "Select Vehicle Type"
+    },
+    {
+      "v" : "1",
+      "n" : "Boat"
+    },
+    {
+      "v" : "2",
+      "n" : "RV"
+    },
+    {
+      "v" : "18",
+      "n" : "Trailer"
+    },
+    {
+      "v" : "19",
+      "n" : "5th Wheel"
+    },
+    {
+      "v" : "20",
+      "n" : "Car"
+    },
+    {
+      "v" : "21",
+      "n" : "Limo"
+    },
+    {
+      "v" : "22",
+      "n" : "Truck"
+    },
+    {
+      "v" : "23",
+      "n" : "Jet Ski"
+    },
+    {
+      "v" : "24",
+      "n" : "Camper Shell"
+    },
+    {
+      "v" : "25",
+      "n" : "Van"
+    },
+    {
+      "v" : "26",
+      "n" : "Bus"
+    },
+    {
+      "v" : "27",
+      "n" : "Food Truck"
+    },
+    {
+      "v" : "28",
+      "n" : "Outside Storage"
+    },
+    {
+      "v" : "29",
+      "n" : "Boat Trailer Only"
+    },
+    {
+      "v" : "30",
+      "n" : "Motor Cycle"
+    },
+    {
+    	"v" : "101",
+      "n" : "Invalid"
+    }
+  ]
+}

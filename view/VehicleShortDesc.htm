@@ -1,0 +1,38 @@
+<div class="trillo-form trillo-form-1">
+  <div data-container="">
+    <div class="card" style="margin-bottom:0px; margin-top: 10px">
+      <div class="card-header">
+        <h2 class="card-title">
+          Vehicle {{{vehicleId}}}
+          <button style="float:right" class="btn btn-primary waves-effect" nm="_browser_back">
+            <i class="zmdi zmdi-close-circle-o"></i> Close
+          </button>
+        </h2>
+         
+        <small class="card-subtitle">
+        <span class="trillo-template-hidden">{{{customerLastName}}}, {{{customerFirstName}}}</span>
+        </small>
+      </div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-sm-12">
+            <span class="trillo-template-hidden" data-prefix="License:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{license}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" CF #:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{cfNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Model:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{model}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Type:" data-suffix="&#160;&#160;&#160;&#160;&#160;"
+            enum-name="vehicle-type">{{{vehicleType}}}</span>
+            <br>
+            <span class="trillo-template-hidden" data-prefix=" Current Building:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;" enum-name="building-type">{{{buildingNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Current Location:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{location}}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

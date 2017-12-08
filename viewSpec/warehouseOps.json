@@ -1,0 +1,22 @@
+{
+  "name" : "warehouseOps",
+  "type" : "html",
+  "actionSpecs" : [
+    {
+      "name" : "checkin",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "quickRelocate",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "quickCheckin",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "sidebar:tasks",
+      "type" : "viewAbsoluteNav"
+    }
+  ]
+}

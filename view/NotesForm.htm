@@ -1,0 +1,62 @@
+<div class="trillo-form trillo-form-1">
+  <form data-container="">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          Edit Notes
+        </h2>
+         
+        <small class="card-subtitle">
+        <span class="trillo-template-hidden">{{{customerLastName}}}, {{{customerFirstName}}}</span>
+        </small>
+      </div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-sm-12">
+            <span class="trillo-template-hidden" data-prefix="License:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{license}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" CF #:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{cfNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Model:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{model}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Type:" data-suffix="&#160;&#160;&#160;&#160;&#160;"
+            enum-name="vehicle-type">{{{vehicleType}}}</span>
+            <br>
+            <span class="trillo-template-hidden" data-prefix=" Current Building:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;" enum-name="building-type">{{{buildingNumber}}}</span>
+            <span class="trillo-template-hidden" data-prefix=" Current Location:" data-suffix=
+            "&#160;&#160;&#160;&#160;&#160;">{{{location}}}</span>
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <textarea data-input="" class="form-control" placeholder="Add a note here..." nm="notes">
+                                                                         
+                                                             
+                                             
+                             
+              </textarea>
+              <i class="form-group__bar"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <button class="btn btn-primary waves-effect" nm="okThenClose">
+                Save
+              </button>
+              <button class="btn btn-secondary waves-effect" nm="close">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>
+

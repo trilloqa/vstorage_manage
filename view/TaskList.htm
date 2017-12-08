@@ -1,0 +1,113 @@
+<div class="card">
+  <div class="card-header" style="padding-bottom:0px">
+    <h2 class="card-title">
+      Tasks
+    </h2>
+    <small class="card-subtitle"></small>
+    <div class="dataTables_buttons actions">
+      <button class="btn btn-success waves-effect" nm="newTask" action-type="viewAbsoluteNav">
+        <i class="zmdi zmdi-assignment"></i>
+        New Task
+      </button>
+      <button class="btn btn-success waves-effect" nm="_refresh">
+        <i class="zmdi zmdi-refresh"></i>
+        Refresh
+      </button>
+    </div>
+    <div data-table-filter style="margin-top: 30px">
+      <div data-radios-container data-type="string" nm="completed">
+        <label class="custom-control custom-radio">
+            <input type="radio" name="completedStatus" nm="completed" value="0" class="custom-control-input" checked>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Pending</span>
+        </label>
+        <label class="custom-control custom-radio">
+            <input type="radio" name="completedStatus" nm="completed" value="" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">All</span>
+        </label>
+        <label>Select Building:</label>
+        <select data-input="" class="form-control form-control-lg" 
+          style="margin-left: 15px; display:inline-block; width: 100px"
+          nm="buildingNumber"  enum-name="building-filter-type"></select>
+       </div>
+    </div>
+  </div>
+ 
+  <div class="card-block">
+    <div class="table-responsive">
+      <table data-container="" id="data-table" class="table table-bordered">
+        <thead class="thead-default">
+          <tr data-table-header="">
+            <th style="width:10%" class="hide-800">
+              Id
+            </th>
+            <th style="width:15%">
+              Due
+            </th>
+            <th style="width:25%">
+              Task
+            </th>
+            <th style="width:30%">
+              Sub-tasks
+            </th>
+            <th style="width:10%">
+              License/ CF
+            </th>
+            <th style="width:5%; text-align:center">
+              Action
+            </th>
+            <th style="width:5%">
+              <i class="zmdi zmdi-check-circle"></i>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-table-row="">
+            <td data-child-type="readonly" data-field-type="readonly" nm="vehicleId" class="hide-800">
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly">
+              <span nm="dueDate" field-type="datetime" format="M/D/YY - h:mm A"></span>
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly" nm="subject">
+            </td>
+            <td data-child-type="readonly">
+              <span data-field-type="collection" class="subtasks" nm="subTasks">
+                <span data-collection-entry="">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" subtask-name="{{{name}}}" nm="subtaskCompleted">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">{{{subject}}}</span>
+                  </label>
+                </span>
+              </span>
+            </td>
+            <td data-child-type="readonly" data-field-type="readonly">
+              {{{license}}}<br/>{{{cfNumber}}}
+            </td>
+            <td class="skip" data-child-type="button" data-display-name="Button" style="text-align:center">
+              <span class="table-buttons">
+                <button class="btn btn-sm btn-secondary waves-effect" nm="taskEdit" action-type="viewAbsoluteNav" action-target=
+                "task;id={{id}}" title="Edit task details">
+                  <i class="zmdi zmdi-edit"></i> Edit
+                </button>
+                <button class="btn btn-sm btn-secondary waves-effect" nm="photo" title="View Photos" action-type="viewAbsoluteNav"
+                action-target="photo;id={{referenceId}}">
+                  <i class="zmdi zmdi-collection-image"></i>
+                  Photos
+                </button>
+              </span>
+            </td>
+            <td data-child-type="checkbox" data-display-name="Checkbox">
+              <label class="custom-control custom-checkbox op-check-box">
+                <input data-input="" type="checkbox" class="custom-control-input" nm="completed"> 
+                <span class="custom-control-indicator"></span>
+                <span data-label="" class="custom-control-description"></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

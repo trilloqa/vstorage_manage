@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'IDAUTOMATIONHC39M CODE 39 BARCODE [31066]';
+  src: url('../fonts/IDAUTOMATIONHC39M CODE 39 BARCODE [31066].ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  position: relative;
+}
+.sidebar {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.dataTables_length > label {
+  padding-left: 15px;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  cursor: pointer;
+  *cursor: hand;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+table.dataTable thead .sorting {
+  background-image: url("../img/sort_both.png");
+}
+table.dataTable thead .sorting_asc {
+  background-image: url("../img/sort_asc.png");
+}
+table.dataTable thead .sorting_desc {
+  background-image: url("../img/sort_desc.png");
+}
+table.dataTable thead .sorting_asc_disabled {
+  background-image: url("../img/sort_asc_disabled.png");
+}
+table.dataTable thead .sorting_desc_disabled {
+  background-image: url("../img/sort_desc_disabled.png");
+}
+
+.trillo-form-1.form-in-design-mode {
+  width: auto;
+}
+
+.trillo-container-row  {
+ flex-wrap: nowrap; 
+}
+
+
+
+[data-ma-theme=green] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #32c787;
+}
+
+[data-ma-theme=blue] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #2196F3;
+}
+
+[data-ma-theme=red] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #ff5652;
+}
+
+[data-ma-theme=orange] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #FF9800;
+}
+
+[data-ma-theme=teal] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #39bbb0;
+}
+
+[data-ma-theme=cyan] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #00BCD4;
+}
+
+[data-ma-theme=blue-grey] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #607D8B;
+}
+
+[data-ma-theme=purple] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #d559ea;
+}
+
+[data-ma-theme=indigo] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #3F51B5;
+}
+
+[data-ma-theme=lime] .sidebar .navigation a[trillo-selected-attr="selected"] {
+  color: #CDDC39;
+}
+
+[data-ma-theme=green] .btn-success {
+  background-color: #32c787;
+}
+
+[data-ma-theme=blue] .btn-success {
+  background-color: #2196F3;
+}
+
+[data-ma-theme=red] .btn-success {
+  background-color: #ff5652;
+}
+
+[data-ma-theme=orange] .btn-success {
+  background-color: #FF9800;
+}
+
+[data-ma-theme=teal] .btn-success {
+  background-color: #39bbb0;
+}
+
+[data-ma-theme=cyan] .btn-success {
+  background-color: #00BCD4;
+}
+
+[data-ma-theme=blue-grey] .btn-success {
+  background-color: #607D8B;
+}
+
+[data-ma-theme=purple] .btn-success {
+  background-color: #d559ea;
+}
+
+[data-ma-theme=indigo] .btn-success {
+  background-color: #3F51B5;
+}
+
+[data-ma-theme=lime] .btn-success {
+  background-color: #CDDC39;
+}
+
+@media (max-width: 1199px) {
+  .sidebar:not(.toggled) {
+      opacity: 1;
+      transform: none;
+  }
+  
+  .left-column {
+    background-color: #FFFFFF;
+    transition: transform 300ms, opacity 300ms;
+    position: absolute;
+    top: 72px;
+    z-index: 2;
+    min-height: 100%;
+  }
+  
+  .left-column:not(.toggled) {
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+  }
+ 
+  .left-column.toggled {
+    box-shadow: 5px 0 10px rgba(0,0,0,.08);
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.trillo-busy-indicator {
+  width: 50px !important;
+  top: 80px;
+}
+
+.trillo-busy-indicator .progress-bar {
+  height: 8px;
+}
+
+.table-responsive {
+ /* overflow-x: visible; */
+}
+
+select{
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+}
+
+.dataTable .btn-sm {
+  margin: 5px; 
+  border-width: 0px;
+}
+
+.home-ops .btn {
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.home-ops .btn .zmdi  {
+  vertical-align: text-bottom;
+}
+
+.zmdi {
+  font-size: 1.3rem;
+}
+
+.op-checkin,
+.op-checkout,
+.op-precheckout,
+.op-relocate,
+.op-resumestorage {
+  display: none;
+}
+
+.op-checkin-on .op-checkin {
+  display: inline-block;
+}
+
+.op-checkout-on .op-checkout {
+  display: inline-block;
+}
+
+.op-precheckout-on .op-precheckout {
+  display: inline-block;
+}
+
+.op-relocate-on .op-relocate {
+  display: inline-block;
+}
+
+.op-resumestorage-on .op-resumestorage {
+  display: inline-block;
+}
+
+.op-check-box {
+  margin-left: -13px;
+  left: 50%;
+  top: 8px;
+}
+
+.table-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.table button {
+  vertical-align: middle;
+  text-align: left;
+}
+
+.table button i {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.table .subtasks label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.op-error-msg {
+  color: #ff5652 !important;
+}
+
+.large-table .sidebar:not(.toggled) {
+  opacity: 1;
+  transform: none;
+}
+
+.large-table .left-column {
+  background-color: #FFFFFF;
+  transition: transform 300ms, opacity 300ms;
+  position: absolute;
+  top: 72px;
+  z-index: 2;
+  min-height: 100%;
+}
+
+.large-table .left-column:not(.toggled) {
+  opacity: 0;
+  transform: translate3d(-100%,0,0);
+}
+
+.large-table .left-column.toggled {
+  box-shadow: 5px 0 10px rgba(0,0,0,.08);
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.large-table .hidden-xl-up {
+    display: block !important;
+}
+
+.table-responsive td {
+  vertical-align: middle;
+}
+
+.editable-table {
+  padding: 20px;
+}
+
+.editable-table table {
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+
+.editable-table th {
+  border: 1px solid #eee;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.editable-table td {
+  border: 1px solid #222;
+  background-color: #fff;
+}
+
+.editable-table tbody tr td:first-child {
+  padding-top: 1.65rem;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.barcode-page {
+  width: 8.5in;
+  height: 11.0in;
+  margin: 0;
+}
+
+.barcode-page .barcode-inner-div {
+  width: 8.5in;
+  height: 10.0in;
+  position: relative;
+  top: 0.5in;
+}
+
+.barcode-label {
+  width: 2.025in; /* plus .6 inches from padding */
+  height: 1.0in; /* plus .125 inches from padding */
+  padding: 0in .3in 0;
+  margin-left: .0625in;
+  margin-right: .0625in; /* the gutter */
+
+  display: inline-block;
+
+  text-align: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  margin-top: -4px;
+}
+
+@media print {
+  .barcode-inner-div {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}
+
+@page  
+{ 
+  size: auto;   /* auto is the initial value */ 
+  /* this affects the margin in the printer settings */ 
+  margin: 0mm 0mm 0mm 0mm;  
+} 
+
+.barcode-card-block {
+  border-width: 1px; 
+  border-style:solid; 
+  padding: 20px !important; 
+  border-radius: 2px; 
+  margin:20px
+}
+
+.barcode-div {
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.barcode-mode .hide-in-barcode-mode {
+  display: none;
+}

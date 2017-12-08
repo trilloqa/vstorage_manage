@@ -1,0 +1,48 @@
+<div class="card hide-in-barcode-mode" name="VehicleImageGrid" nm="VehicleImageGrid">
+  <div class="card-block">
+    <h3 class="trillo-text-center text-muted" style="margin-bottom:30px">Vehicle Photos</h3>
+    <div class="trillo-canvas js-grid lightbox photos">
+      <a href="_file/{{{name}}}" class="js-grid-cell" style="padding:10px; display:inline-block" data-container="">
+        <img src-value="_file/{{{name}}}" src="" style="width:240px; vertical-align:top" alt="">
+      </a>
+    </div>
+    <div class="trillo-upload-form-c js-file-upload">
+      <form action="/fileUpload" method="post"
+        enctype="multipart/form-data" target="hiddenFrame"
+        class="trillo-upload-form">
+        <div
+          class="js-upload-alert alert alert-block alert-danger"
+          style="display: none"></div>
+        <div class="trillo-upload-dragdrop-box js-file-drag-drop"  style="padding-top:20px">
+          <span class="trillo-upload-dragdrop-box-msg">Click here to choose from your computer.
+            <br>Or, drag and drop files here.
+          </span>
+        </div>
+        <div class="trillo-upload-progress-box js-upload-progress-box">
+          <div class="trillo-upload-progress-file trillo-display-none js-upload-progress-file">
+            <div nm="fileName" class="trillo-upload-progress-file-name"></div>
+            <div nm="error" class="trillo-upload-progress-file-error trillo-display-none"></div>
+            <div class="progress">
+              <div nm="progress" class="progress-bar js-progress-bar trillo-upload-pb-notransition" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
+                style="width: 0%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trillo-upload-file-input-hidden">
+          <div class="trillo-upload-form-group-c">
+            <div class="input-group">
+              <input type="text" maxlength="50" name="fileName"
+                nm="fileName" class="trillo-file-name">
+            </div>
+            <input type="file" name="file" nm="file" class="trillo-file"
+              size="51">
+          </div>
+        </div>
+        <div class="trillo-upload-dragdrop-box-separator"></div>
+      </form>
+      <iframe class="trillo-upload-form-hidden-iframe" style="position:absolute" name="hiddenFrame"></iframe>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+{
+  "vehicle-status" : [
+    {
+      "v" : "0",
+      "n" : "Unknown"
+    },
+    {
+      "v" : "1",
+      "n" : "In Warehouse"
+    },
+    {
+      "v" : "2",
+      "n" : "Checked Out"
+    },
+    {
+      "v" : "3",
+      "n" : "Pre-checked Out"
+    },
+    {
+      "v" : "4",
+      "n" : "Inactive"
+    },
+    {
+      "v" : "5",
+      "n" : "Long Term Out"
+    },
+    {
+      "v" : "6",
+      "n" : "New Vehicle"
+    },
+    {
+    	"v" : "101",
+      "n" : "Invalid"
+    }
+  ]
+}

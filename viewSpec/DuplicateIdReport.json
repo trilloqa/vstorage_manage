@@ -1,0 +1,54 @@
+{
+  "name" : "DuplicateIdReport",
+  "type" : "dataTable",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/manage/rv",
+    "body" : {
+      "className" : "InventoryRecord",
+      "start" : 1,
+      "size" : 10000,
+      "where" : "status = '2' or status = '4' or status = '5'",
+      "orderBy" : "updatedAt desc",
+      "groupBy" : "vehicleId",
+      "having" : "COUNT(*) > 1"
+    },
+    "method" : "post"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "checkedOut",
+      "type" : "checkbox"
+    },
+    {
+      "name" : "license"
+    },
+    {
+      "name" : "cf"
+    },
+    {
+      "name" : "model"
+    }
+  ],
+  "actionSpecs" : [
+    {
+      "name" : "vehicleEdit",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "_datatable_print"
+    },
+    {
+      "name" : "preCheckout",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "relocate",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "checkout",
+      "type" : "view"
+    }
+  ]
+}

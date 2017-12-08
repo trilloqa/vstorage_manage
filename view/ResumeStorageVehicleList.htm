@@ -1,0 +1,118 @@
+<div class="card">
+  <div class="card-header" style="padding-bottom:0px">
+    <h2 class="card-title trillo-template-hidden">
+      Resume Storage
+    </h2>
+    <small class="card-subtitle"></small>
+    <div style="margin-top: 30px" nm="OpVehicleListFilter">
+      <div data-radios-container="" data-type="string" nm="status">
+        <label class="custom-control custom-radio op-resumestorage">
+        <input type="radio" name="statusFilter" nm="status" value="availableResumeStorage" class="custom-control-input"> 
+        <span class="custom-control-indicator"></span>
+         
+        <span class="custom-control-description">Long term out</span>
+        </label>
+         
+        <label class="custom-control custom-radio">
+        <input type="radio" name="statusFilter" nm="status" value="all" class="custom-control-input" checked> 
+        <span class="custom-control-indicator"></span>
+         
+        <span class="custom-control-description">All</span>
+        </label>
+        
+        <label style="margin-left:20px">Building:</label>
+        <select data-input="" class="form-control" 
+          style="margin-left: 15px; display:inline-block; width: 100px"
+          nm="buildingNumber"  enum-name="building-filter-type"></select>
+      </div>
+    </div>
+    <div class="card-block">
+      <div class="table-responsive">
+        <table data-container="" id="data-table" class="table table-bordered">
+          <thead class="thead-default">
+            <tr data-table-header="">
+              <th style="width:6%" class="hide-700">
+                Id
+              </th>
+              <th style="width:12%" class="hide-1300">
+                Status
+              </th>
+              <th style="width:12%" class="hide-600">
+                First Name
+              </th>
+              <th style="width:12%" class="hide-500">
+                Last Name
+              </th>
+              <th style="width:16%"  class="hide-800">
+                Model
+              </th>
+              <th style="width:8%">
+                License
+              </th>
+              <th style="width:6%" class="hide-900">
+                CF#
+              </th>
+              <th style="width:10%" class="hide-1000">
+                Building
+              </th>
+              <th style="width:10%; text-align:center">
+                Actions
+              </th>
+              <th style="width:6%; text-align:center">
+                <i class="zmdi zmdi-check-circle"></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-table-row="">
+              <td data-child-type="readonly" data-field-type="readonly" nm="vehicleId" class="hide-700">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" class="hide-1300">
+                <span enum-name="vehicle-status" nm="status"></span>
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="customerFirstName" class="hide-600">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="customerLastName" class="hide-500">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="model" class="hide-800">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="license">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" nm="cfNumber" class="hide-900">
+              </td>
+              <td data-child-type="readonly" data-field-type="readonly" class="hide-1000">
+                <span enum-name="building-type" nm="buildingNumber"></span>
+              </td>
+              <td data-child-type="button" data-display-name="Button" style="text-align:center">
+                <span class="table-buttons"></span>
+                <button class="btn btn-sm btn-secondary waves-effect op-precheckout" nm="preCheckout" action-type=
+                "dialogView" action-target="PreCheckoutForm2" title="Pre Checkout">
+                  <i class="zmdi zmdi-time"></i>
+                  Pre-Checkout
+                </button>
+                <button class="btn btn-sm btn-secondary waves-effect" nm="vehicleEdit" action-type="viewAbsoluteNav"
+                action-target="vehicle;id={{id}}" title="Edit vehicle details">
+                  <i class="zmdi zmdi-edit"></i>
+                  Edit
+                </button>
+                <button class="btn btn-sm btn-secondary waves-effect" nm="photo" title="View Photos" action-type=
+                "viewAbsoluteNav" action-target="photo;id={{id}}">
+                  <i class="zmdi zmdi-collection-image"></i>
+                  Photos
+                </button>
+              </td>
+              <td data-child-type="checkbox" data-display-name="Checkbox">
+                <label class="custom-control custom-checkbox op-check-box">
+                <input data-input="" type="checkbox" class="custom-control-input" nm="completed"> 
+                <span class="custom-control-indicator"></span>
+                 
+                <span data-label="" class="custom-control-description"></span>
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

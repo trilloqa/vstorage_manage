@@ -1,0 +1,72 @@
+{
+  "name" : "VI",
+  "type" : "container",
+  "controller" : "AppC",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/manage/rv/Vehicle?id={{{params.id}}}"
+  },
+  "containerSpecs" : [
+    {
+      "name" : "mainRow",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "mainContentArea",
+          "autoNav" : false,
+          "childrenSpecs" : [
+            {
+              "name" : "Row_1",
+              "alignment" : "top",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "VehicleShortDesc_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "VehicleShortDesc",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_2",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "VehicleImageGrid2_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "VehicleImageGrid2",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_",
+              "type" : "row"
+            }
+          ],
+          "designTimeHeight" : "100px",
+          "flexGrow" : "1",
+          "main" : true,
+          "tag" : "templateE",
+          "type" : "column"
+        }
+      ],
+      "flexGrow" : "1",
+      "main" : true,
+      "tag" : "templateE",
+      "type" : "row"
+    }
+  ]
+}

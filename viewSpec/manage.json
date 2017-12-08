@@ -1,0 +1,951 @@
+{
+  "name" : "manage",
+  "type" : "page",
+  "controller" : "manageC",
+  "containerSpecs" : [
+    {
+      "name" : "headerRow",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "header_1",
+          "alignment" : "left",
+          "autoNav" : false,
+          "flexGrow" : "1",
+          "reference" : "header",
+          "tag" : "userDefined",
+          "trigger" : "_initial_",
+          "type" : "view"
+        }
+      ],
+      "designTimeHeight" : "49px",
+      "tag" : "templateE",
+      "type" : "row"
+    },
+    {
+      "name" : "mainRow",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "leftColumn",
+          "autoNav" : false,
+          "childrenSpecs" : [
+            {
+              "name" : "sidebar_1",
+              "alignment" : "top",
+              "autoNav" : false,
+              "flexGrow" : "1",
+              "reference" : "sidebar",
+              "tag" : "userDefined",
+              "trigger" : "_initial_",
+              "type" : "view"
+            }
+          ],
+          "cssClass" : "left-column",
+          "designTimeWidth" : "240px",
+          "minWidth" : "270px",
+          "tag" : "templateE",
+          "type" : "column"
+        },
+        {
+          "name" : "titleAndContentArea",
+          "autoNav" : false,
+          "childrenSpecs" : [
+            {
+              "name" : "titleBar",
+              "autoNav" : false,
+              "css" : {
+                "designTimeHeight" : "30px",
+                "padding" : "5px 20px"
+              },
+              "tag" : "templateE",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_39",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "BarcodeGrid_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "cssClass" : "editable-table",
+                  "flexGrow" : "1",
+                  "reference" : "BarcodeGrid",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:bardcodes",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:bardcodes",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_36",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "WrongWarehouseReport_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "WrongWarehouseReport",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:wrongLocationReport",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:wrongLocationReport",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_30",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "QuickRelocateForm_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "QuickRelocateForm",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/quickRelocate",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/quickRelocate",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_29",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "QuickCheckinForm_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "QuickCheckinForm",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/quickCheckin",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/quickCheckin",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_28",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "RecordedInventoryList_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "RecordedInventoryList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:recordedInventory",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:recordedInventory",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_24",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "OrgForm_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "OrgForm",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:editOrg",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:editOrg",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_1",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "warehouseOps_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "css" : {
+                    "margin-top" : "20px"
+                  },
+                  "flexGrow" : "1",
+                  "reference" : "warehouseOps",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/home_",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_2",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "CustomerOps_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "CustomerOps",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/home_",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_3",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "CheckedOut_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "css" : {
+                    "margin-left" : "0px"
+                  },
+                  "flexGrow" : "1",
+                  "reference" : "CheckedOut",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                },
+                {
+                  "name" : "PreCheckedOut_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "css" : {
+                    "margin-left" : "10px"
+                  },
+                  "flexGrow" : "1",
+                  "reference" : "PreCheckedOut",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                },
+                {
+                  "name" : "CheckedIn_2",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "css" : {
+                    "margin-left" : "10px"
+                  },
+                  "flexGrow" : "1",
+                  "reference" : "CheckedIn",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/home_",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_9",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "PreCheckoutVehicleList_3",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "PreCheckoutVehicleList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/precheckout",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/precheckout",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_13",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "NewVehicle_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "NewVehicle",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/newVehicle",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/newVehicle",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_15",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "Customer_2",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "css" : {
+                    "margin-top" : "20px"
+                  },
+                  "flexGrow" : "1",
+                  "reference" : "Customer",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/customer",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/customer",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_16",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "CustomerVehicleList_2",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "CustomerVehicleList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/customer",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/customer",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_14",
+              "alignment" : "left",
+              "autoNav" : false,
+              "tag" : "userDefined",
+              "trigger" : "_initial_/preCheckout2",
+              "type" : "row"
+            },
+            {
+              "name" : "PreCheckoutForm2_1",
+              "alignment" : "left",
+              "autoNav" : false,
+              "css" : {
+                "margin-top" : "20px"
+              },
+              "flexGrow" : "1",
+              "reference" : "PreCheckoutForm2",
+              "tag" : "userDefined",
+              "trigger" : "_initial_/preCheckout2",
+              "type" : "view"
+            },
+            {
+              "name" : "Row_18",
+              "alignment" : "left",
+              "autoNav" : false,
+              "tag" : "userDefined",
+              "trigger" : "_initial_/relocate2",
+              "type" : "row"
+            },
+            {
+              "name" : "RelocateForm2_1",
+              "alignment" : "left",
+              "autoNav" : false,
+              "css" : {
+                "margin-top" : "20px"
+              },
+              "flexGrow" : "1",
+              "reference" : "RelocateForm2",
+              "tag" : "userDefined",
+              "trigger" : "_initial_/relocate2",
+              "type" : "view"
+            },
+            {
+              "name" : "Row_19",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "CheckoutForm2_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "CheckoutForm2",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/checkout2",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/checkout2",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_20",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "CheckinForm2_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "CheckinForm2",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/checkin2",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/checkin2",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_22",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "TaskList_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "TaskList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:tasks",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:tasks",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_23",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "Task_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "Task",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/task",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/task",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_25",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "NewTask_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "NewTask",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/newTask",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/newTask",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_27",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "VehicleList_2",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "VehicleList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:vehicleList",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:vehicleList",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_5",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "ScanForm_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "ScanForm",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:scanForm",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:scanForm",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_8",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "VehicleShortDesc_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "VehicleShortDesc",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/photo",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/photo",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_11",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "VehicleImageGrid2_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "VehicleImageGrid2",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/photo",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/photo",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_31",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "ResumeStorageVehicleList_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "ResumeStorageVehicleList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/resumeStorage",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/resumeStorage",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_33",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "InitDB_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "InitDB",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:initDB",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:initDB",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_34",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "MissingVehicleList_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "MissingVehicleList",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:missingVehicleReport",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:missingVehicleReport",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_35",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "WrongStatusReport_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "WrongStatusReport",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:statusReport",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:statusReport",
+              "type" : "row"
+            },
+            {
+              "name" : "Row_37",
+              "alignment" : "left",
+              "autoNav" : false,
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:duplicateIdReport",
+              "type" : "row"
+            },
+            {
+              "name" : "DuplicateIdReport_1",
+              "alignment" : "left",
+              "autoNav" : false,
+              "flexGrow" : "1",
+              "reference" : "DuplicateIdReport",
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:duplicateIdReport",
+              "type" : "view"
+            },
+            {
+              "name" : "Row_38",
+              "alignment" : "left",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "InvalidIdReport_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "InvalidIdReport",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/sidebar:invalidLabelReport",
+                  "type" : "view"
+                }
+              ],
+              "tag" : "userDefined",
+              "trigger" : "_initial_/sidebar:invalidLabelReport",
+              "type" : "row"
+            },
+            {
+              "name" : "mainContentArea",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "column_6",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "Row_32",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "UploadCSVFiles_1",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "flexGrow" : "1",
+                          "reference" : "UploadCSVFiles",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/sidebar:uploadCSVFiles",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/sidebar:uploadCSVFiles",
+                      "type" : "row"
+                    }
+                  ],
+                  "flexGrow" : "1",
+                  "type" : "column"
+                },
+                {
+                  "name" : "column_5",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "Row_12",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "Vehicle_2",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "css" : {
+                            "margin-top" : "20px"
+                          },
+                          "flexGrow" : "1",
+                          "reference" : "Vehicle",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/vehicle",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/vehicle",
+                      "type" : "row"
+                    },
+                    {
+                      "name" : "Row_26",
+                      "alignment" : "left",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "VehicleImageGrid_1",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "flexGrow" : "1",
+                          "reference" : "VehicleImageGrid",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/vehicle",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/vehicle",
+                      "type" : "row"
+                    },
+                    {
+                      "name" : "Row_17",
+                      "alignment" : "left",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "VehicleLog_2",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "flexGrow" : "1",
+                          "reference" : "VehicleLog",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/vehicle",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/vehicle",
+                      "type" : "row"
+                    }
+                  ],
+                  "flexGrow" : "1",
+                  "type" : "column"
+                },
+                {
+                  "name" : "column_4",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "Row_10",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "CheckinVehicleList_1",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "flexGrow" : "1",
+                          "reference" : "CheckinVehicleList",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/checkin",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/checkin",
+                      "type" : "row"
+                    }
+                  ],
+                  "flexGrow" : "1",
+                  "type" : "column"
+                },
+                {
+                  "name" : "column_3",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "Row_7",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "Customer_1",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "css" : {
+                            "margin-top" : "20px"
+                          },
+                          "flexGrow" : "1",
+                          "reference" : "Customer",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/newCustomer",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/newCustomer",
+                      "type" : "row"
+                    }
+                  ],
+                  "flexGrow" : "1",
+                  "type" : "column"
+                },
+                {
+                  "name" : "column_2",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "Row_6",
+                      "autoNav" : false,
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/sidebar:activityReport",
+                      "type" : "row"
+                    },
+                    {
+                      "name" : "Row_21",
+                      "alignment" : "center",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "AllVehicleLog_1",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "flexGrow" : "1",
+                          "reference" : "AllVehicleLog",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/sidebar:activityReport",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/sidebar:activityReport",
+                      "type" : "row"
+                    }
+                  ],
+                  "flexGrow" : "1",
+                  "type" : "column"
+                },
+                {
+                  "name" : "column_1",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "Row_4",
+                      "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "CustomerList_1",
+                          "alignment" : "left",
+                          "autoNav" : false,
+                          "flexGrow" : "1",
+                          "reference" : "CustomerList",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/sidebar:customerList",
+                          "type" : "view"
+                        }
+                      ],
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_/sidebar:customerList",
+                      "type" : "row"
+                    }
+                  ],
+                  "flexGrow" : "1",
+                  "type" : "column"
+                },
+                {
+                  "name" : "WeeklyChart_1",
+                  "alignment" : "left",
+                  "autoNav" : false,
+                  "flexGrow" : "1",
+                  "reference" : "WeeklyChart",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                }
+              ],
+              "designTimeHeight" : "100px",
+              "flexGrow" : "1",
+              "main" : true,
+              "tag" : "templateE",
+              "type" : "row"
+            }
+          ],
+          "flexGrow" : "1",
+          "main" : true,
+          "tag" : "templateE",
+          "type" : "column"
+        }
+      ],
+      "cssClass" : "light-content-area main-row",
+      "flexGrow" : "1",
+      "main" : true,
+      "tag" : "templateE",
+      "type" : "row"
+    }
+  ]
+}

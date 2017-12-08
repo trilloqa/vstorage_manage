@@ -1,0 +1,48 @@
+{
+  "name" : "CustomerVehicleList",
+  "type" : "table",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/manage/rv",
+    "body" : {
+      "className" : "Vehicle",
+      "start" : 1,
+      "size" : 10000,
+      "orderBy" : "updatedAt desc",
+      "where" : "parentId='{{{params.id}}}'"
+    },
+    "method" : "post"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "status"
+    },
+    {
+      "name" : "license"
+    },
+    {
+      "name" : "cf"
+    },
+    {
+      "name" : "model"
+    }
+  ],
+  "actionSpecs" : [
+    {
+      "name" : "_datatable_print"
+    },
+    {
+      "name" : "newVehicle",
+      "query" : "parentId={{{params.id}}}",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "preCheckout",
+      "type" : "view"
+    },
+    {
+      "name" : "relocate",
+      "type" : "view"
+    }
+  ]
+}
